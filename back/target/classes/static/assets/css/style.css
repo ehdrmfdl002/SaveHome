@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Russo One", sans-serif !important;
+  background-color: cornsilk;
+}
+
+button {
+  font-family: "Russo One", sans-serif !important;
+  background-color: black;
+  font-size: 10px;
+  color: white;
+  padding: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-container {
+  border-bottom: 1px solid rgba(95, 92, 82, 0.15);
+}
+
+.home-icon {
+	margin-right: 1.5rem !important;
+} 
+
+.header-top {
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #2e3537;
+}
+
+.header-btn {
+  height: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.nav-container {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10rem;
+}
+
+.nav-container > ul.nav-content {
+  margin: auto;
+}
+
+.nav-container > ul.nav-content > li {
+  margin-right: 50px;
+}
+
+.nav-container > ul.nav-content > li > a {
+  padding: 5px;
+  font-size: 20px;
+  font-style: bold;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.home-img {
+  width: 3rem;
+  margin-right: 100rem;
+  justify-content: flex-start;
+}
+
+.main-top {
+  height: 300px;
+  line-height: 300px;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+}
+
+.main-top::before {
+  content: "";
+  background-image: url("../img/MainApt.png");
+  opacity: 0.3;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #2e3537;
+}
+
+/* .main-nav > .main-nav-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav > .main-nav-form > select {
+  margin-right: 10px;
+  width: 150px;
+  height: 35px;
+} */
+
+.main-nav > button {
+  font-size: 15px;
+  width: 200px;
+  margin-right: 15px;
+}
+
+.main-content {
+  height: 400px;
+  background-color: #fff;
+}
+
+.footer-container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(95, 92, 82, 0.15);
+}
+
+.footer-container > .footer-container-header {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-container > .footer-container-content {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.footer-footer {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(214, 195, 117);
+  border-top: 1px solid rgba(95, 92, 82, 0.15);
+}
+
+.login-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container-header {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form > input {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.login-form > button {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.signup-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container-header {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form > input {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.signup-form > button {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.info-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-container > button {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.info-container-header {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.info-container-content {
+  font-size: 30px;
+}
+
+.list-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-container {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dong-container .form-group {
+  width: 200px !important;
+}
+
+.apt-container .form-group {
+  width: 200px !important;
+}
+
+.map-content {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.map-content > div.header {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.map-content > div {
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  padding: 5px;
+  border: 1px solid rgba(95, 92, 82, 0.15);
+  white-space: nowrap;
+  text-overflow: scroll;
+}
+
