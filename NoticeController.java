@@ -52,32 +52,33 @@ public class NoticeController {
 	@GetMapping("{articleNo}")
 	public ResponseEntity<Board> getNoticeView(@PathVariable int articleNo) throws Exception {
 		noticeService.updateHit(articleNo);
-		logger.info("listArticle - 호출");
+		System.out.println(articleNo);
 		return new ResponseEntity<>(noticeService.getArticle(articleNo), HttpStatus.OK);
 	}	
 	
 	@GetMapping
 	public ResponseEntity<List<Board>> getNoticeList(Board notice) throws Exception {
-		logger.info("getArticle - 호출 : ");
+		System.out.println(notice);
 		return new ResponseEntity<>(noticeService.listArticle(notice), HttpStatus.OK);
 	}
 	
 	@PostMapping
 	private ResponseEntity<?> write(@RequestBody Board board) throws Exception {
-		logger.info("writeArticle - 호출");
+		System.out.println(board);
 		return new ResponseEntity<>(noticeService.writeArticle(board), HttpStatus.OK);
 	}
 
 	@PutMapping("{articleNo}")
 	private ResponseEntity<?> Modify(@PathVariable int articleNo, @RequestBody Board board) throws Exception {
 		board.setArticleNo(articleNo);
-		logger.info("modifyArticle - 호출 {}", board);
+		System.out.println(board);
+		System.out.println(articleNo);
 		return new ResponseEntity<> (noticeService.modifyArticle(board), HttpStatus.OK);
 	}
 	
 	@DeleteMapping("{articleNo}")
 	private ResponseEntity<Integer> delete(@PathVariable int articleNo) throws Exception {
-		logger.info("deleteArticle - 호출");
+		System.out.println(articleNo);
 		return new ResponseEntity<>(noticeService.deleteArticle(articleNo), HttpStatus.OK);
 	}
 }
